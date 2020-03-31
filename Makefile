@@ -94,4 +94,4 @@ clean:
 
 .PHONY: install
 install:
-	install -d ./out
+	install -m 0600 ./lz_header.bin $(out)

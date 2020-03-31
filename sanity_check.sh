@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 . util.sh
 
 if ! od --format=x8 --skip-bytes=$SL_SIZE --read-bytes=16 $SLB_FILE | grep -q "e91192048e26f178 02ccc4765bc82a83"; then

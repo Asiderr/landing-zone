@@ -91,3 +91,7 @@ clean:
 
 # Compiler-generated header dependencies.  Should be last.
 -include $(OBJ:.o=.d) $(TESTS:=.d)
+
+.PHONY: install
+install:
+	install -d ./out
